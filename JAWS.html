@@ -6419,8 +6419,6 @@
               <br>
             </td>
             <td>
-
-              <strong>TO BE COMPLETED </strong>
               <ul>
                 <li>JAWS announces "x of y" for each radio button where x is the position of the
                   radio button in the group, and y is the total number of radio buttons in the group
@@ -6453,7 +6451,80 @@
     
     [reset]</code> test</a></td>
             <td>Button control for resetting a form</td>
-            <td>&nbsp;</td>
+            <td>
+              <ul>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-reset.html#ireset-001">Test IRESET-001: <code>input type=reset</code> element</a>:
+                  <ul>
+                    <li>
+                      <kbd>B</kbd> / <kbd>Shift</kbd> + <kbd>B</kbd> key navigation:
+                      <p>Reset, button</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p>Reset, button</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p>Reset, button, to activate press Enter</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-reset.html#ireset-002">Test IRESET-002: <code>input type=reset</code> element with <code>value="test"</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>B</kbd> / <kbd>Shift</kbd> + <kbd>B</kbd> key navigation:
+                      <p><em><code>value</code> attribute contents</em>, button</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>value</code> attribute contents</em>, button</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>value</code> attribute contents</em>, button, to activate press Enter</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-reset.html#ireset-003">Test IRESET-003: <code>input type=reset</code> element with <code>disabled</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>B</kbd> / <kbd>Shift</kbd> + <kbd>B</kbd> key navigation:
+                      <p>Not announced - skipped entirely</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p>Reset, button, unavailable</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p>Not announced - skipped entirely</p>
+                    </li>
+                  </ul>
+                </li>    
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-reset.html#ireset-004">Test IRESET-004: <code>input type=reset</code> element with <code>size=2</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>B</kbd> / <kbd>Shift</kbd> + <kbd>B</kbd> key navigation:
+                      <p>Reset, button</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p>Reset, button</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p>Reset, button, to activate press Enter</p>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+
+            </td>
             <td>
               <ul>
                 <li>List Buttons <kbd>Ctrl</kbd> + <kbd>Insert</kbd> + <kbd>B</kbd></li>
@@ -6461,16 +6532,27 @@
                 <li>Previous button <kbd>B</kbd></li>
               </ul>
             </td>
-            <td><svg viewBox="0 0 448 512"
+            <td><svg viewBox="0 0 512 512"
                    width="20"
                    role="img"
-                   aria-label="yes"
-                   class="yes">
-                <use href="#yes" />
+                   aria-label="question mark"
+                   class="unknown">
+                <use href="#unknown" />
               </svg>
               <br>
             </td>
-            <td>&nbsp;</td>
+            <td>
+              <ul>
+                <li>
+                  JAWS announces the <code>input type=reset</code> element as a button, but
+                  does not indicate the specific <em>type</em> of button (a button for resetting a form)
+                  (all tests)
+                </li>
+                <li>
+                  The element is navigable using <code>button</code> navigation keys (all tests)
+                </li>
+              </ul>
+          </td>
           </tr>
           <tr>
             <th scope="row"> <a href="https://html.spec.whatwg.org/multipage/form-elements.html#text-typetext-state-and-search-state-typesearch"><code>input
@@ -6482,7 +6564,130 @@
     
     [search]</code> test</a></td>
             <td>Text control for inputting search terms</td>
-            <td>&nbsp;</td>
+            <td>
+              <ul>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-search.html#si-001">Test SI-001: unlabelled <code>input type=search</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-search.html#si-002">Test SI-002: <code>input type=search</code> with <code>aria-label</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>aria-label</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>aria-label</code> attribute contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>aria-label</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-search.html#si-003">Test SI-003: <code>input type=search</code> with <code>aria-labelledby</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em>contents referenced via the <code>aria-labelledby</code> attribute</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em>contents referenced via the <code>aria-labelledby</code> attribute</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em>contents referenced via the <code>aria-labelledby</code> attribute</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-search.html#si-004">Test SI-004: <code>input type=search</code> with <code>label</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-search.html#si-005">Test SI-005: <code>input type=search</code> with <code>title</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>title</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>title</code> attribute contents</em>, edit, <em><code>title</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>title</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-search.html#si-006">Test SI-006: <code>input type=search</code> with <code>aria-describedby</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank, <em>contents referenced via the <code>aria-describedby</code> attribute</em></p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank, <em>contents referenced via the <code>aria-describedby</code> attribute</em>, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-search.html#si-007">Test SI-007: <code>input type=search</code> with <code>label</code> element &amp; <code>title</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank, <em><code>title</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, <em><code>title</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank, <em><code>title</code> attribute contents</em>, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </td>
             <td>
               <ul>
                 <li>List Edit Boxes <kbd>Ctrl</kbd> + <kbd>Insert</kbd> + <kbd>E</kbd></li>
@@ -6499,7 +6704,37 @@
               </svg>
               <br>
             </td>
-            <td>&nbsp;</td>
+            <td>
+              <ul>
+                <li>
+                  JAWS announces <code>input type=search</code> elements as edit fields, but does
+                  not announce the <em>type</em> of edit field (a field intended for entering a
+                  search term) (all tests)
+                </li>
+                <li>
+                  When navigating to an empty <code>input type=search</code> element using the
+                  <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> keys or the <kbd>Tab</kbd> / <kbd>Shift</kbd> + 
+                  <kbd>Tab</kbd> keys, JAWS will announce that the field is empty ("blank"); however, JAWS will
+                  not announce this term when navigating to the element when using the <kbd>Arrow</kbd> keys
+                  (all tests)
+                </li>
+                <li>
+                  If the <code>input type=search</code> element is missing an explicit accessible
+                  name, JAWS "guesses" the label based on nearby content
+                  (<a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-search.html#si-001">Test SI-001</a>,
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-search.html#si-006">Test SI-006</a>)
+                </li>
+                <li>
+                  <strong>Possible bug:</strong> when navigating to an unlabelled <code>input type=search</code>
+                  element that includes an <code>aria-describedby</code> attribute, JAWS announces the contents
+                  referenced by this attribute when the element is reached using the <kbd>E</kbd> / <kbd>Shift</kbd> +
+                  <kbd>E</kbd> keys or the <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> keys; however, it
+                  does not announce the referenced text when navigating to the element using the <kbd>Arrow</kbd>
+                  keys
+                  (<a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-search.html#si-006">Test SI-006</a>)
+                </li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <th scope="row"> <a href="https://html.spec.whatwg.org/multipage/form-elements.html#submit-button-state-typesubmit"><code>input
@@ -6509,7 +6744,62 @@
     
     [submit]</code> test</a></td>
             <td>Button control for submitting a form</td>
-            <td>&nbsp;</td>
+            <td>
+              <ul>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-submit.html#isubmit-001">Test ISUBMIT-001: <code>input type=submit</code> element</a>:
+                  <ul>
+                    <li>
+                      <kbd>B</kbd> / <kbd>Shift</kbd> + <kbd>B</kbd> key navigation:
+                      <p>Submit, button</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p>Submit, button</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p>Submit, button, to activate press Enter</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-submit.html#isubmit-002">Test ISUBMIT-002: <code>input type=submit</code> element with <code>value="test"</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>B</kbd> / <kbd>Shift</kbd> + <kbd>B</kbd> key navigation:
+                      <p>Test, button</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p>Test, button</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p>Test, button, to activate press Enter</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-submit.html#isubmit-003">Test ISUBMIT-003: <code>input type=submit</code> element with <code>disabled</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>B</kbd> / <kbd>Shift</kbd> + <kbd>B</kbd> key navigation:
+                      <p>Not announced - skipped entirely</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p>Submit, button, unavailable</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p>Not announced - skipped entirely</p>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </td>
             <td>
               <ul>
                 <li>List Buttons <kbd>Ctrl</kbd> + <kbd>Insert</kbd> + <kbd>B</kbd></li>
@@ -6526,7 +6816,16 @@
               </svg>
               <br>
             </td>
-            <td>&nbsp;</td>
+            <td>
+              The <code>input type=submit</code> element is announced as a submit button by
+              default when the element does not include the <code>value</code> attribute
+              (<a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-submit.html#isubmit-001">Test ISUBMIT-001</a>).
+              However, if the <code>value</code> attribute is applied to the element, JAWS conveys
+              the contents of this attribute in place of the word "submit", and does not otherwise announce
+              that the element represents a submit button.
+              (<a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-submit.html#isubmit-002">Test ISUBMIT-002</a>,
+              <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-submit.html#isubmit-003">Test ISUBMIT-003</a>)
+            </td>
           </tr>
           <tr>
             <th scope="row"> <a href="https://html.spec.whatwg.org/multipage/form-elements.html#telephone-state-typetel"><code>input
@@ -6538,7 +6837,148 @@
     
     [tel]</code> test</a></td>
             <td>text box control for inputting a phone number</td>
-            <td>&nbsp;</td>
+            <td>
+              <ul>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-tel.html#tl-001">Test TL-001: unlabelled <code>input type=tel</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-tel.html#tl-002">Test TL-002: <code>input type=tel</code> with <code>aria-label</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>aria-label</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>aria-label</code> attribute contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>aria-label</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-tel.html#tl-003">Test TL-003: <code>input type=tel</code> with <code>aria-labelledby</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em>Contents referenced via the <code>aria-labelledby</code> attribute</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em>Contents referenced via the <code>aria-labelledby</code> attribute</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em>Contents referenced via the <code>aria-labelledby</code> attribute</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-tel.html#tl-004">Test TL-004: <code>input type=tel</code> with <code>label</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-tel.html#tl-005">Test TL-005: <code>input type=tel</code> with <code>title</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>title</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>title</code> attribute contents</em>, edit, <em><code>title</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>title</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-tel.html#tl-006">Test TL-006: <code>input type=tel</code> with <code>aria-describedby</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank, <em>contents referenced via the <code>aria-describedby</code> attribute</em></p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank, <em>contents referenced via the <code>aria-describedby</code> attribute</em>, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-tel.html#tl-007">Test TL-007: <code>input type=tel</code> with <code>label</code> &amp; <code>title</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank, <em><code>title</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                       <p><em><code>label</code> element contents</em>, edit, <em><code>title</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank, <em><code>title</code> attribute contents</em>, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-tel.html#tl-008">Test TL-008: <code>input type=tel</code> with explicit <code>label</code> &amp; <code>required</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, required, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, required</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, required, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+
+            </td>
             <td>
               <ul>
                 <li>List Edit Boxes <kbd>Ctrl</kbd> + <kbd>Insert</kbd> + <kbd>E</kbd></li>
@@ -6546,14 +6986,48 @@
                 <li>Move to Prior Edit Box <kbd>Shift</kbd> + <kbd>E</kbd></li>
               </ul>
             </td>
-            <td><svg viewBox="0 0 448 512"
+            <td><svg viewBox="0 0 512 512"
                    width="20"
                    role="img"
-                   aria-label="yes"
-                   class="yes">
-                <use href="#yes" />
-              </svg></td>
-            <td>&nbsp;</td>
+                   aria-label="question mark"
+                   class="unknown">
+                <use href="#unknown" />
+              </svg>
+              <br>
+            </td>
+            <td>
+              <ul>
+                <li>
+                  JAWS announces <code>input type=tel</code> elements as edit fields, but does
+                  not announce the <em>type</em> of edit field (a field intended for entering a phone
+                  number) (all tests)
+                </li>
+                <li>
+                  When navigating to an empty <code>input type=tel</code> element using the
+                  <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> keys or the
+                  <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> keys, JAWS will announce
+                  that the field is empty ("blank"); however, JAWS will not announce this term when
+                  navigating to the element when using the <kbd>Arrow</kbd> keys (all tests)
+                </li>
+                <li>
+                  If the <code>input type=tel</code> element is missing an explicit accessible
+                  name, JAWS "guesses" the label based on nearby content
+                  (<a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-tel.html#tl-001">Test TL-001</a>,
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-tel.html#tl-006">Test TL-006</a>)
+                </li>
+                <li>
+                  <strong>Possible bug:</strong> when navigating to an unlabelled
+                  <code>input type=tel</code> element that includes an
+                  <code>aria-describedby</code> attribute, JAWS announces the contents referenced by
+                  this attribute when the element is reached using the <kbd>E</kbd> /
+                  <kbd>Shift</kbd> + <kbd>E</kbd> keys or the <kbd>Tab</kbd> / 
+                  <kbd>Shift</kbd> + <kbd>Tab</kbd> keys; however, it does not announce
+                  the referenced text when navigating to the element using the 
+                  <kbd>Arrow</kbd> keys
+                  (<a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-tel.html#tl-006">TL-006</a>)
+                </li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <th scope="row"> <a href="https://html.spec.whatwg.org/multipage/form-elements.html#text-typetext-state-and-search-state-typesearch"><code>input
@@ -6565,7 +7039,316 @@
     
     [text]</code> test</a></td>
             <td>text box control</td>
-            <td>&nbsp;</td>
+            <td>
+              <ul>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-001">Test ITEXT-001: <code>input type=text</code> element</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-002">Test ITEXT-002: <code>input type=text</code> element without a set <code>type</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-003">Test ITEXT-003: <code>input type=text</code> element with implicit <code>label</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-004">Test ITEXT-004: <code>input type=text</code> element with explicit <code>label</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-005">Test ITEXT-005: <code>input type=text</code> element with explicit <code>label</code> &amp; <code>placeholder</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank, placeholder, <em><code>placeholder</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, placeholder, <em><code>placeholder</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank, placeholder, <em><code>placeholder</code> attribute contents</em>, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-006">Test ITEXT-006: <code>input type=text</code> element with explicit <code>label</code>, <code>placeholder</code>, &amp; <code>required</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, required, blank, placeholder, <em><code>placeholder</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, required, placeholder, <em><code>placeholder</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, required, blank, placeholder, <em><code>placeholder</code> attribute contents</em>, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-007">Test ITEXT-007: <code>input type=text</code> element with explicit <code>label</code>, <code>placeholder</code>, &amp; <code>readonly</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, readonly, edit, blank, placeholder, <em><code>placeholder</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p>Readonly, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, readonly, edit, blank, placeholder, <em><code>placeholder</code> attribute contents</em>, use your reading keys to read the text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-008">Test ITEXT-008: <code>input type=text</code> element with explicit <code>label</code>, <code>placeholder</code>, &amp; <code>disabled</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p>Not announced - entirely skipped</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p>Edit, unavailable, placeholder, <em><code>placeholder</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p>Not announced - entirely skipped</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-009">Test ITEXT-009: <code>input type=text</code> element with only <code>placeholder</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>placeholder</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>placeholder</code> attribute contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>placeholder</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-010">Test ITEXT-010: <code>input type=text</code> element with <code>aria-label</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>aria-label</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>aria-label</code> attribute contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>aria-label</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-011">Test ITEXT-011: <code>input type=text</code> element with <code>aria-labelledby</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em>Contents referenced via the <code>aria-labelledby</code> attribute</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                       <p><em>Contents referenced via the <code>aria-labelledby</code> attribute</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em>Contents referenced via the <code>aria-labelledby</code> attribute</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-012">Test ITEXT-012: <code>input type=text</code> element with <code>pattern</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-013">Test ITEXT-013: <code>input type=text</code> element with <code>size</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-014">Test ITEXT-014: <code>input type=text</code> element with <code>aria-autocomplete=list</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-015">Test ITEXT-015: <code>input type=text</code> element with <code>aria-autocomplete=inline</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank, type in text  </p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-016">Test ITEXT-016: <code>input type=text</code> element with <code>aria-autocomplete=both</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-017">Test ITEXT-017: <code>input type=text</code> element with <code>aria-autocomplete=none</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-018">Test ITEXT-017: <code>input type=text</code> element with <code>aria-autocomplete=none</code> and <code>autocomplete=off</code> attributes</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
             <td>
               <ul>
                 <li>List Edit Boxes <kbd>Ctrl</kbd> + <kbd>Insert</kbd> + <kbd>E</kbd></li>
@@ -6582,7 +7365,9 @@
               </svg>
               <br>
             </td>
-            <td>&nbsp;</td>
+            <td>
+              <strong>In progress</strong>
+            </td>
           </tr>
           <tr>
             <th scope="row"> <a href="https://html.spec.whatwg.org/multipage/form-elements.html#time-state-typetime"><code>input
