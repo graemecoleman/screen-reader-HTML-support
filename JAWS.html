@@ -2748,7 +2748,7 @@
                    class="noneE">
                 <use href="#noneE" />
               </svg></td>
-            <td>No semantics conveyed. Refer to: <a href="https://www.tpgi.com/screen-readers-support-for-text-level-html-semantics/">Scree Readers support
+            <td>No semantics conveyed. Refer to: <a href="https://www.tpgi.com/screen-readers-support-for-text-level-html-semantics/">Screen Readers support
                 for text level HTML semantics</a></td>
           </tr>
           <tr>
@@ -2757,8 +2757,10 @@
             <td><a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/embed.html"><code>embed</code>
                 test</a></td>
             <td><a href="https://html.spec.whatwg.org/multipage/infrastructure.html#plugins">Plugins</a></td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td>
+              Embedded content
+            </td>
+            <td>No special commands</td>
             <td><svg viewBox="0 0 512 512"
                    width="20"
                    role="img"
@@ -2768,7 +2770,7 @@
               </svg>
               <br>
             </td>
-            <td>&nbsp;</td>
+            <td>No semantics conveyed</td>
           </tr>
           <tr id="toc-f">
             <th scope="row"> <a href="https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element"><code>fieldset</code></a>
@@ -7331,7 +7333,7 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-018">Test ITEXT-017: <code>input type=text</code> element with <code>aria-autocomplete=none</code> and <code>autocomplete=off</code> attributes</a>:
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-018">Test ITEXT-018: <code>input type=text</code> element with <code>aria-autocomplete=none</code> and <code>autocomplete=off</code> attributes</a>:
                   <ul>
                     <li>
                       <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
@@ -7366,7 +7368,45 @@
               <br>
             </td>
             <td>
-              <strong>In progress</strong>
+              <ul>
+                <li>
+                  When navigating to an empty <code>input type=text</code> element using the 
+                  <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> keys or the 
+                  <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tav</kbd> keys, JAWS will announce that the 
+                  field is empty ("blank"); however, JAWS will not announce this term when 
+                  navigating to the element when using the Arrow keys (all tests)
+                </li>
+                <li>
+                  If an <code>input type=text</code> element is missing an explicit 
+                  accessible name, JAWS "guesses" the label based on nearby content
+                  (<a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-001">Test ITEXT-001</a>,
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-002">Test ITEXT-002</a>)  
+                </li>
+                <li>
+                  <strong>Possible bug:</strong> if an <code>input type=text</code> element
+                  includes both the <code>readonly</code> attribute and the <code>placeholder</code> attribute,
+                  JAWS announces the presence and contents of the <code>placeholder</code> attribute when navigating
+                  to the field using the <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> keys or the 
+                  <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tav</kbd> keys, but will not announce the presence or
+                  contents of the <code>placeholder</code> attribute when navigating to the field using the
+                  <code>Arrow</code> keys
+                  (<a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-007">Test ITEXT-007</a>)
+                </li>
+                <li>JAWS does not explicitly announce information associated with the
+                  <code>size</code>, <code>aria-autocomplete=list</code>,
+                  <code>aria-autocomplete=inline</code>, <code>aria-autocomplete=both</code>,
+                  <code>aria-autocomplete=none</code>, or
+                  <code>aria-autocomplete=off</code> attributes when these attributes are
+                  applied to the <code>input type=text</code> element and when the element
+                  receives focus
+                  (<a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-013">Test ITEXT-013</a>,
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-014">Test ITEXT-014</a>,
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-015">Test ITEXT-015</a>,
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-016">Test ITEXT-016</a>,
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-017">Test ITEXT-017</a>,
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-text.html#itext-018">Test ITEXT-018</a>) 
+                </li>
+              </ul>
             </td>
           </tr>
           <tr>
