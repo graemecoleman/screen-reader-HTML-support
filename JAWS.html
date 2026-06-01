@@ -7419,8 +7419,8 @@
     
     [time]</code> test</a></td>
             <td>Control for setting a specific time.</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td>IN PROGRESS</td>
+            <td>IN PROGRESS</td>
             <td><svg viewBox="0 0 448 512"
                    width="20"
                    role="img"
@@ -7430,7 +7430,7 @@
               </svg>
               <br>
             </td>
-            <td>&nbsp;</td>
+            <td>IN PROGRESS</td>
           </tr>
           <tr>
             <th scope="row"> <a href="https://html.spec.whatwg.org/multipage/form-elements.html#url-state-typeurl"><code>input
@@ -7442,7 +7442,181 @@
     
     [url]</code> test</a></td>
             <td>Text control for inputting a URL</td>
-            <td>&nbsp;</td>
+            <td>
+              <ul>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-001">Test UI-001: unlabelled <code>input type="url"</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                     <p><em>Closest visible label</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em>Closest visible label</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-002">Test UI-002: <code>input type="url"</code> with <code>aria-label</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>aria-label</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>aria-label</code> attribute contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>aria-label</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-003">Test UI-003: <code>input type="url"</code> with <code>aria-labelledby</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em>Content referenced by the <code>aria-labelledby</code> attribute</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em>Content referenced by the <code>aria-labelledby</code> attribute</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em>Content referenced by the <code>aria-labelledby</code> attribute</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-004">Test UI-004: <code>input type="url"</code> with <code>label</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-005">Test UI-005: <code>input type="url"</code> with <code>title</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>title</code> attribute contents</em>, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>title</code> attribute contents</em>, edit, <em><code>title</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>title</code> attribute contents</em>, edit, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-006">Test UI-006: <code>input type="url"</code> with <code>aria-describedby</code></a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p>Edit, blank, <em>contents referenced by the <code>aria-describedby</code> attribute</em></p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p>Edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p>Edit, blank, <em>contents referenced by the <code>aria-describedby</code> attribute</em>, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-007">Test UI-007: <code>input type="url"</code> with <code>label</code> element &amp; <code>title</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank, <em><code>title</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, <em><code>title</code> attribute contents</em></p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, blank, <em><code>title</code> attribute contents</em>, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-008">Test UI-008: <code>input type="url"</code> with explicit <code>label</code> element &amp; <code>required</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, required, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, required</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, edit, required, blank, type in text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-009">Test UI-009: <code>input type="url"</code> with explicit <code>label</code> &amp; <code>readonly</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, readonly, edit, blank</p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p>Readonly, edit</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em><code>label</code> element contents</em>, readonly, edit, blank, use your reading keys to read the text</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-010">Test UI-010: <code>input type="url"</code> with explicit <code>label</code> &amp; <code>disabled</code> attribute</a>:
+                  <ul>
+                    <li>
+                      <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> key navigation:
+                      <p><em>Not announced, skipped entirely</em></p>
+                    </li>
+                    <li>
+                      <kbd>Arrow</kbd> key navigation:
+                      <p>Edit, unavailable</p>
+                    </li>
+                    <li>
+                      <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> key navigation:
+                      <p><em>Not announced, skipped entirely</em></p>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </td>
             <td>
               <ul>
                 <li>List Edit Boxes <kbd>Ctrl</kbd> + <kbd>Insert</kbd> + <kbd>E</kbd></li>
@@ -7450,14 +7624,60 @@
                 <li>Move to Prior Edit Box <kbd>Shift</kbd> + <kbd>E</kbd></li>
               </ul>
             </td>
-            <td><svg viewBox="0 0 448 512"
+            <td><svg viewBox="0 0 512 512"
                    width="20"
                    role="img"
-                   aria-label="yes"
-                   class="yes">
-                <use href="#yes" />
+                   aria-label="question mark"
+                   class="unknown">
+                <use href="#unknown" />
               </svg></td>
-            <td>&nbsp;</td>
+            <td>
+              <ul>
+                <li>JAWS announces an <code>input type=url</code> field as an edit field,
+                but does not announce the <em>type</em> of edit field (a field that 
+                requires a URL as an input) (all tests)</li>
+                <li>If an <code>input type=url</code> field is missing any form of labelling, JAWS "guesses" the label
+                  based on nearby content
+                  (<a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-001">Test UI-001</a>)
+                </li>
+                <li>
+                  When navigating to an empty <code>input type=url</code> element using the
+                  <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> keys or the
+                  <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> keys, JAWS will announce that
+                  the field is empty ("blank"); however, JAWS will not announce this term when navigating
+                  to the element using the <kbd>Arrow</kbd> keys (all tests)
+                </li>
+                <li>
+                  <strong>Possible bug:</strong> when an <code>input type=url</code> element
+                  is labelled using only the <code>title</code> attribute, JAWS announces the
+                  contents of this attribute twice when navigating into the field using the
+                  <kbd>Arrow</kbd> keys
+                  (<a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-005">Test UI-005</a>)
+                </li>
+                <li>
+                  <strong>Possible bug:</strong> when navigating to an unlabelled
+                  <code>input type=url</code> element that includes an
+                  <code>aria-describedby</code> attribute, JAWS announces the contents referenced
+                  by this attribute when the element is reached using the 
+                  <kbd>E</kbd> / <kbd>Shift</kbd> + <kbd>E</kbd> keys or the
+                  <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> keys; however, it does not 
+                  announce the referenced text when navigating to the element using the
+                  <kbd>Arrow</kbd> keys
+                  (<a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-006">Test UI-006</a>)
+                </li>
+                <li>
+                  <strong>Possible bug:</strong> when navigating into an
+                  <code>input type=url</code> element that includes an explicit label and a
+                  <code>readonly</code> attribute or a <code>disabled</code> attribute, 
+                  JAWS does not announce the contents of the
+                  <code>label</code> element when navigating into the field using the
+                  <kbd>Arrow</kbd> keys
+                  (<a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-009">Test UI-009</a>,
+                  <a href="https://stevefaulkner.github.io/AT-browser-tests/test-files/input-url.html#ui-010">Test UI-010</a>)
+                </li>
+
+              </ul>
+            </td>
           </tr>
           <tr>
             <th scope="row"><a href="https://html.spec.whatwg.org/multipage/edits.html#the-ins-element"><code>ins</code></a></th>
